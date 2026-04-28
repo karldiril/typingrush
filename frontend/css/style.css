@@ -1,0 +1,74 @@
+:root {
+    /* Palette de couleur */
+    --brand-orange: #FF8C00;
+    --brand-dark: #333333;
+
+    /* Role */
+    --primary: var(--brand-orange);
+    --secondary: #d37400; /* primary hover */
+    --background: #F2F2F2;
+
+    /* Text  Color*/
+    --text-primary: var(--brand-dark);
+    --text-secondary: #636363;
+
+    /* Font families */
+    --font-main: 'Plus Jakarta Sans', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace; /* Pour le jeu */
+
+    /* Font bold */
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    /* Hover color */
+    --bg-hover: #f3f4f6;
+    --bg-hover-active: #e5e7eb;
+
+}
+
+body {
+    font-family: var(--font-main);
+    font-weight: var(--fw-regular);
+    -webkit-font-smoothing: antialiased;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 2px solid red;
+}
+
+a {
+    text-decoration: none;
+    color: var(--brand-dark)
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 80px;
+    font-size: 1rem;
+}
+
+nav .left {
+    display: flex;
+    gap: 60px;
+}
+
+nav .right {
+    display: flex;
+    gap: 60px;
+}
+
+nav .right #register {
+    background-color: var(--brand-dark);
+    color: var(--background);
+    padding: 10px 30px;
+    border-radius: 5px;
+}
