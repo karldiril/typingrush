@@ -13,14 +13,14 @@
     --text-secondary: #636363;
 
     /* Font families */
-    --font-main: 'Plus Jakarta Sans', sans-serif;
+    --font-main: 'Inter', sans-serif;
     --font-mono: 'JetBrains Mono', monospace; /* Pour le jeu */
 
     /* Font bold */
     --fw-regular: 400;
     --fw-medium: 500;
     --fw-semibold: 600;
-    --fw-bold: 700;
+    --fw-bold: 800;
 
     /* Hover color */
     --text-hover: #000000;
@@ -103,23 +103,26 @@ nav .right #register {
     align-items: center;
     text-align: center;
     gap: 0.75rem;
-    margin-bottom: 7rem;
+    margin-bottom: 13rem;
 }
 
 .hero-container .hero-title {
-    width: 400px;
-    font-size: 3.5rem;
+    width: 700px;
+    font-size: 4.5rem;
+    font-weight: var(--fw-bold);
     
 }
 
 .hero-container .hero-lead {
     width: 400px;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .hero-container .hero-cta {
-    padding: 10px 25px;
+    color: var(--background);
+    padding: 8px 25px;
     background-color: var(--primary);
-    border-radius: 9999px;
-    font-size: 1.5rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: var(--fw-medium);
 }
