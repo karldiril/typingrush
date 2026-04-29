@@ -1,0 +1,51 @@
+:root {
+    /* Palette de couleur */
+    --brand-orange: #FF8C00;
+    --brand-dark: #333333;
+
+    /* Role */
+    --primary: var(--brand-orange);
+    --secondary: #d37400; /* primary hover */
+    --background: #F2F2F2;
+
+    /* Text  Color*/
+    --text-primary: var(--brand-dark);
+    --text-secondary: #636363;
+
+    /* Font families */
+    --font-main: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace; /* Pour le jeu */
+
+    /* Font bold */
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 800;
+
+    /* Hover color */
+    --text-hover: #000000;
+    --bg-hover-active: #e5e7eb;
+
+}
+
+span {
+    font-size: 4rem;
+    font-weight: var(--fw-semibold);
+    font-family: var(--font-mono);
+    
+}
+
+.jeu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.erreur {
+    color: red;
+}
+
+.bon {
+    color: greenyellow;
+}
