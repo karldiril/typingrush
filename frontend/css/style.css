@@ -28,6 +28,17 @@
 
 }
 
+body {
+    background-color: var(--background);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*outline: 2px solid red;*/
+}
+
 span {
     font-size: 4rem;
     font-weight: var(--fw-semibold);
@@ -39,13 +50,17 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
+.actif {
+    border-left: 3px solid black;
+}
 
-.erreur {
+.incorrect {
     color: red;
 }
 
-.bon {
+.correct {
     color: greenyellow;
 }
