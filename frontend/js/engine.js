@@ -13,7 +13,12 @@ document.body.addEventListener("keydown", (input) => {
             jeu[i].classList.add("incorrect");
         }
         jeu[i].classList.remove("actif");
-        ++i;
-        
+        if (i < jeu.length - 1) {  // Vérifier si on arrive à la dernière lettre
+            ++i;
+            jeu[i].classList.add("actif");
+        }
+        else {
+            console.log("fini");
+        }
     }
 })
