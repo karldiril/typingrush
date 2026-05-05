@@ -93,6 +93,7 @@ nav .right #register {
 
 nav .menu {
     display: none;
+    cursor: pointer;
 }
 
 
@@ -135,6 +136,15 @@ nav .menu {
     border-radius: 8px;
     font-size: 1.1rem;
     font-weight: var(--fw-medium);
+}
+
+
+.open {
+    display: absolute;
+}
+
+.close {
+    display: none;
 }
 
 
