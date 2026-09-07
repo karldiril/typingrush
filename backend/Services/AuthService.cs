@@ -64,4 +64,16 @@ public class AuthService : IAuthService
         string passwordHash = BCrypt.Net.BCrypt.HashPassword(password);
         return passwordHash;
     }
+
+    private async Task<User?> VerifyUserAsync(string email, string password)
+    {
+        User? user = await _context.Users.FirstOrDefaultAsync(u => u.Email == email.Trim().ToLower());
+        if (user != null)
+        {
+            bool isCorrectPassword = BCrypt.Net.BCrypt.Verify(password, user.HashPassword);
+
+            if (isCorrectPassword) return user;
+        }
+        return null;
+    }
 }
