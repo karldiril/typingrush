@@ -41,8 +41,9 @@ public class AuthService : IAuthService
 
     public async Task<string?> LoginAsync(LoginDto loginDto)
     {
-        
-        throw new NotImplementedException();
+        User? user = await VerifyUserAsync(loginDto.Email, loginDto.Password);
+        if (user == null) return null;
+        else return "OK";
     }
 
     private async Task<bool> AlreadyUsedEmailAsync(string email)
