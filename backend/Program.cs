@@ -1,4 +1,6 @@
 using backend.Data;
+using backend.Services;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -13,7 +15,7 @@ builder.Services.AddSwaggerGen();
 
 
 builder.Services.AddDbContext<TypovelDbContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
-
+builder.Services.AddScoped<IAuthService, AuthService>();
 
 var app = builder.Build();
 
